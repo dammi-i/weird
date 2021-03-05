@@ -8,5 +8,14 @@ consteval void rip() {
     for (;;) {
     }
 }
+
+template <unsigned leak_speed>
+consteval void leaky_pipe()
+{
+    for (;;) {
+        new char[leak_speed];
+    }
+}
+
 int main() { rip(); }
 
