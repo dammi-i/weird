@@ -6,7 +6,8 @@
 #include <llvm/IR/Attributes.h>
 /*
  * a useful attribute [[based]] to print a function is based using clang's ast
- * note: works only with clang
+ * this supposed to be at compile time, since the compiler prints "function is based" when it sees the based attribute
+ * note: works only with clang + a reason to use clang for cuz clang is epik
  * compile instructions: lmfao check the docs
  */
 
